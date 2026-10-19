@@ -26,14 +26,6 @@ export const toko: Toko[] = [
     warna: "#F57224",
     warnaImage: "linear-gradient(90deg, #0F156D 0%, #F57224 100%)",
   },
-  {
-    nama: "Instagram",
-    url: "https://www.instagram.com/noxen",
-    deskripsi: "Update koleksi terbaru dan DM untuk order.",
-    warna: "#E1306C",
-    warnaImage:
-      "linear-gradient(45deg, #405DE6 0%, #833AB4 35%, #C13584 60%, #E1306C 80%, #FD1D1D 100%)",
-  },
 ];
 
 export const kontak = {

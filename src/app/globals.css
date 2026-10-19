@@ -59,6 +59,15 @@ body {
   }
 }
 
+/* Polish khusus mobile (di bawah 768px) — desktop tidak terpengaruh */
+@media (max-width: 767px) {
+  html,
+  body {
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 .text-balance {
   text-wrap: balance;
 }

@@ -5,7 +5,13 @@ import { rupiah } from "@/lib/format";
 import { cn } from "@/lib/cn";
 import type { Produk } from "@/types";
 
-export function ProductCard({ produk }: { produk: Produk }) {
+export function ProductCard({
+  produk,
+  rasio = "4/5",
+}: {
+  produk: Produk;
+  rasio?: "4/5" | "1/1";
+}) {
   const utama = produk.gambar[0];
   const contain = produk.kartuContain ?? false;
 
@@ -13,7 +19,8 @@ export function ProductCard({ produk }: { produk: Produk }) {
     <Link href={`/produk/${produk.slug}`} className="group block">
       <div
         className={cn(
-          "relative aspect-[4/5] overflow-hidden rounded-3xl",
+          "relative overflow-hidden rounded-3xl",
+          rasio === "1/1" ? "aspect-square" : "aspect-[4/5]",
           contain ? "bg-white" : "bg-surface",
         )}
       >

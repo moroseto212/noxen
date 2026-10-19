@@ -14,7 +14,7 @@ const jelajah = [
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-line/60 bg-surface">
+    <footer className="mt-24 border-t border-line/60 bg-surface max-md:hidden">
       <Container className="py-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>

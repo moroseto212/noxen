@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { kategori } from "@/data/kategori";
+import { cn } from "@/lib/cn";
 
 export function CategoryTiles() {
   return (
@@ -22,7 +23,10 @@ export function CategoryTiles() {
             <Reveal key={k.slug} delay={i * 0.08}>
               <Link
                 href={`/produk#${k.slug}`}
-                className="group block overflow-hidden rounded-3xl bg-surface"
+                className={cn(
+                  "group block overflow-hidden rounded-3xl",
+                  k.gambarContain ? "bg-white" : "bg-surface",
+                )}
               >
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <Image
@@ -30,7 +34,10 @@ export function CategoryTiles() {
                     alt={k.nama}
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    className={cn(
+                      "transition-transform duration-700 ease-out group-hover:scale-105",
+                      k.gambarContain ? "object-contain" : "object-cover",
+                    )}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-5">

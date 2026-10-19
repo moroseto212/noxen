@@ -11,13 +11,14 @@ export const kategori: Kategori[] = [
     slug: "celana",
     nama: "Celana",
     deskripsi: "Chino, denim, kargo, sampai jogger untuk keseharian.",
-    gambar: "/images/celana/01.jpg",
+    gambar: "/images/celana/celana-chino-slim-1.jpg",
   },
   {
     slug: "sepatu",
     nama: "Sepatu",
     deskripsi: "Sneakers, formal, boots, dan sandal untuk setiap langkah.",
-    gambar: "/images/sepatu/01.jpg",
+    gambar: "/images/sepatu/sneakers-low-classic-1.png",
+    gambarContain: true,
   },
   {
     slug: "aksesoris",

@@ -281,7 +281,16 @@ export const produk: Produk[] = [
     bahan: "Twill katun stretch",
     warna: ["Khaki", "Navy", "Hitam"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 1, 2),
+    gambar: [
+      "/images/celana/celana-chino-slim-1.jpg",
+      "/images/celana/celana-chino-slim-2.jpg",
+      "/images/celana/celana-chino-slim-3.jpg",
+    ],
+    warnaGambar: {
+      Khaki: "/images/celana/celana-chino-slim-1.jpg",
+      Navy: "/images/celana/celana-chino-slim-2.jpg",
+      Hitam: "/images/celana/celana-chino-slim-3.jpg",
+    },
     unggulan: true,
   },
   {
@@ -295,7 +304,14 @@ export const produk: Produk[] = [
     bahan: "Denim 12oz",
     warna: ["Biru Tua", "Hitam"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 2, 3),
+    gambar: [
+      "/images/celana/jeans-straight-fit-1.jpg",
+      "/images/celana/jeans-straight-fit-2.jpg",
+    ],
+    warnaGambar: {
+      "Biru Tua": "/images/celana/jeans-straight-fit-1.jpg",
+      Hitam: "/images/celana/jeans-straight-fit-2.jpg",
+    },
   },
   {
     id: "cln-03",
@@ -308,7 +324,16 @@ export const produk: Produk[] = [
     bahan: "French terry",
     warna: ["Hitam", "Abu", "Navy"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 3, 4),
+    gambar: [
+      "/images/celana/jogger-pants-katun-1.jpg",
+      "/images/celana/jogger-pants-katun-2.jpg",
+      "/images/celana/jogger-pants-katun-3.jpg",
+    ],
+    warnaGambar: {
+      Hitam: "/images/celana/jogger-pants-katun-1.jpg",
+      Abu: "/images/celana/jogger-pants-katun-2.jpg",
+      Navy: "/images/celana/jogger-pants-katun-3.jpg",
+    },
   },
   {
     id: "cln-04",
@@ -321,7 +346,16 @@ export const produk: Produk[] = [
     bahan: "Ripstop katun",
     warna: ["Olive", "Khaki", "Hitam"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 4, 5),
+    gambar: [
+      "/images/celana/celana-kargo-utility-1.jpg",
+      "/images/celana/celana-kargo-utility-2.jpg",
+      "/images/celana/celana-kargo-utility-3.jpg",
+    ],
+    warnaGambar: {
+      Olive: "/images/celana/celana-kargo-utility-1.jpg",
+      Khaki: "/images/celana/celana-kargo-utility-2.jpg",
+      Hitam: "/images/celana/celana-kargo-utility-3.jpg",
+    },
   },
   {
     id: "cln-05",
@@ -334,7 +368,14 @@ export const produk: Produk[] = [
     bahan: "Denim stretch",
     warna: ["Biru", "Hitam"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 5, 6),
+    gambar: [
+      "/images/celana/jeans-skinny-stretch-1.jpg",
+      "/images/celana/jeans-skinny-stretch-2.jpg",
+    ],
+    warnaGambar: {
+      Biru: "/images/celana/jeans-skinny-stretch-1.jpg",
+      Hitam: "/images/celana/jeans-skinny-stretch-2.jpg",
+    },
   },
   {
     id: "cln-06",
@@ -347,7 +388,14 @@ export const produk: Produk[] = [
     bahan: "Twill katun",
     warna: ["Khaki", "Navy"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 6, 7),
+    gambar: [
+      "/images/celana/celana-pendek-chino-1.jpg",
+      "/images/celana/celana-pendek-chino-2.jpg",
+    ],
+    warnaGambar: {
+      Khaki: "/images/celana/celana-pendek-chino-1.jpg",
+      Navy: "/images/celana/celana-pendek-chino-2.jpg",
+    },
   },
   {
     id: "cln-07",
@@ -360,7 +408,14 @@ export const produk: Produk[] = [
     bahan: "Ripstop ringan",
     warna: ["Hitam", "Olive"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 7, 8),
+    gambar: [
+      "/images/celana/cargo-jogger-tapered-1.jpg",
+      "/images/celana/cargo-jogger-tapered-2.jpg",
+    ],
+    warnaGambar: {
+      Hitam: "/images/celana/cargo-jogger-tapered-1.jpg",
+      Olive: "/images/celana/cargo-jogger-tapered-2.jpg",
+    },
   },
   {
     id: "cln-08",
@@ -373,7 +428,14 @@ export const produk: Produk[] = [
     bahan: "Wool blend",
     warna: ["Hitam", "Abu Tua"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 8, 9),
+    gambar: [
+      "/images/celana/celana-kerja-formal-1.jpg",
+      "/images/celana/celana-kerja-formal-2.jpg",
+    ],
+    warnaGambar: {
+      Hitam: "/images/celana/celana-kerja-formal-1.jpg",
+      "Abu Tua": "/images/celana/celana-kerja-formal-2.jpg",
+    },
   },
   {
     id: "cln-09",
@@ -386,7 +448,14 @@ export const produk: Produk[] = [
     bahan: "Denim 14oz rigid",
     warna: ["Biru Muda", "Biru Tua"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 9, 10),
+    gambar: [
+      "/images/celana/denim-loose-fit-1.jpg",
+      "/images/celana/denim-loose-fit-2.jpg",
+    ],
+    warnaGambar: {
+      "Biru Muda": "/images/celana/denim-loose-fit-1.jpg",
+      "Biru Tua": "/images/celana/denim-loose-fit-2.jpg",
+    },
     unggulan: true,
   },
   {
@@ -400,7 +469,14 @@ export const produk: Produk[] = [
     bahan: "Dry-fit polyester",
     warna: ["Hitam", "Abu"],
     ukuran: UK_CELANA,
-    gambar: img("celana", 10, 1),
+    gambar: [
+      "/images/celana/celana-training-sport-1.jpg",
+      "/images/celana/celana-training-sport-2.jpg",
+    ],
+    warnaGambar: {
+      Hitam: "/images/celana/celana-training-sport-1.jpg",
+      Abu: "/images/celana/celana-training-sport-2.jpg",
+    },
   },
 
   // ================= SEPATU =================
@@ -415,7 +491,19 @@ export const produk: Produk[] = [
     bahan: "Kulit sintetis + kanvas",
     warna: ["Putih", "Hitam"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 1, 2),
+    gambar: [
+      "/images/sepatu/sneakers-low-classic-1.png",
+      "/images/sepatu/sneakers-low-classic-2.png",
+    ],
+    gambarContain: [
+      "/images/sepatu/sneakers-low-classic-1.png",
+      "/images/sepatu/sneakers-low-classic-2.png",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Putih: "/images/sepatu/sneakers-low-classic-1.png",
+      Hitam: "/images/sepatu/sneakers-low-classic-2.png",
+    },
     unggulan: true,
   },
   {
@@ -429,7 +517,22 @@ export const produk: Produk[] = [
     bahan: "Mesh + suede",
     warna: ["Abu", "Krem", "Hitam"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 2, 3),
+    gambar: [
+      "/images/sepatu/sneakers-chunky-retro-1.jpeg",
+      "/images/sepatu/sneakers-chunky-retro-2.jpeg",
+      "/images/sepatu/sneakers-chunky-retro-3.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/sneakers-chunky-retro-1.jpeg",
+      "/images/sepatu/sneakers-chunky-retro-2.jpeg",
+      "/images/sepatu/sneakers-chunky-retro-3.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Abu: "/images/sepatu/sneakers-chunky-retro-1.jpeg",
+      Krem: "/images/sepatu/sneakers-chunky-retro-2.jpeg",
+      Hitam: "/images/sepatu/sneakers-chunky-retro-3.jpeg",
+    },
   },
   {
     id: "spt-03",
@@ -442,7 +545,22 @@ export const produk: Produk[] = [
     bahan: "Kanvas katun",
     warna: ["Hitam", "Putih", "Navy"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 3, 4),
+    gambar: [
+      "/images/sepatu/slip-on-kanvas-1.jpeg",
+      "/images/sepatu/slip-on-kanvas-2.jpeg",
+      "/images/sepatu/slip-on-kanvas-3.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/slip-on-kanvas-1.jpeg",
+      "/images/sepatu/slip-on-kanvas-2.jpeg",
+      "/images/sepatu/slip-on-kanvas-3.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/sepatu/slip-on-kanvas-1.jpeg",
+      Putih: "/images/sepatu/slip-on-kanvas-2.jpeg",
+      Navy: "/images/sepatu/slip-on-kanvas-3.jpeg",
+    },
   },
   {
     id: "spt-04",
@@ -455,7 +573,22 @@ export const produk: Produk[] = [
     bahan: "Engineered mesh",
     warna: ["Hitam", "Biru", "Merah"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 4, 5),
+    gambar: [
+      "/images/sepatu/running-shoes-lightweight-1.jpeg",
+      "/images/sepatu/running-shoes-lightweight-2.jpeg",
+      "/images/sepatu/running-shoes-lightweight-3.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/running-shoes-lightweight-1.jpeg",
+      "/images/sepatu/running-shoes-lightweight-2.jpeg",
+      "/images/sepatu/running-shoes-lightweight-3.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/sepatu/running-shoes-lightweight-1.jpeg",
+      Biru: "/images/sepatu/running-shoes-lightweight-2.jpeg",
+      Merah: "/images/sepatu/running-shoes-lightweight-3.jpeg",
+    },
   },
   {
     id: "spt-05",
@@ -468,7 +601,19 @@ export const produk: Produk[] = [
     bahan: "Kulit sintetis",
     warna: ["Putih", "Hitam"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 5, 6),
+    gambar: [
+      "/images/sepatu/high-top-court-1.jpeg",
+      "/images/sepatu/high-top-court-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/high-top-court-1.jpeg",
+      "/images/sepatu/high-top-court-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Putih: "/images/sepatu/high-top-court-1.jpeg",
+      Hitam: "/images/sepatu/high-top-court-2.jpeg",
+    },
   },
   {
     id: "spt-06",
@@ -481,7 +626,19 @@ export const produk: Produk[] = [
     bahan: "Kulit sapi asli",
     warna: ["Hitam", "Coklat"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 6, 7),
+    gambar: [
+      "/images/sepatu/sepatu-kulit-formal-1.jpeg",
+      "/images/sepatu/sepatu-kulit-formal-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/sepatu-kulit-formal-1.jpeg",
+      "/images/sepatu/sepatu-kulit-formal-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/sepatu/sepatu-kulit-formal-1.jpeg",
+      Coklat: "/images/sepatu/sepatu-kulit-formal-2.jpeg",
+    },
     unggulan: true,
   },
   {
@@ -495,7 +652,19 @@ export const produk: Produk[] = [
     bahan: "Suede",
     warna: ["Coklat", "Navy"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 7, 8),
+    gambar: [
+      "/images/sepatu/loafers-suede-1.jpeg",
+      "/images/sepatu/loafers-suede-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/loafers-suede-1.jpeg",
+      "/images/sepatu/loafers-suede-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Coklat: "/images/sepatu/loafers-suede-1.jpeg",
+      Navy: "/images/sepatu/loafers-suede-2.jpeg",
+    },
   },
   {
     id: "spt-08",
@@ -508,7 +677,19 @@ export const produk: Produk[] = [
     bahan: "Knit breathable",
     warna: ["Abu", "Hitam"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 8, 9),
+    gambar: [
+      "/images/sepatu/sneakers-knit-sock-1.jpeg",
+      "/images/sepatu/sneakers-knit-sock-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/sneakers-knit-sock-1.jpeg",
+      "/images/sepatu/sneakers-knit-sock-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Abu: "/images/sepatu/sneakers-knit-sock-1.jpeg",
+      Hitam: "/images/sepatu/sneakers-knit-sock-2.jpeg",
+    },
   },
   {
     id: "spt-09",
@@ -521,7 +702,19 @@ export const produk: Produk[] = [
     bahan: "Kulit asli",
     warna: ["Coklat Tua", "Hitam"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 9, 10),
+    gambar: [
+      "/images/sepatu/boots-kulit-chelsea-1.jpeg",
+      "/images/sepatu/boots-kulit-chelsea-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/boots-kulit-chelsea-1.jpeg",
+      "/images/sepatu/boots-kulit-chelsea-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      "Coklat Tua": "/images/sepatu/boots-kulit-chelsea-1.jpeg",
+      Hitam: "/images/sepatu/boots-kulit-chelsea-2.jpeg",
+    },
   },
   {
     id: "spt-10",
@@ -534,7 +727,19 @@ export const produk: Produk[] = [
     bahan: "EVA foam",
     warna: ["Hitam", "Navy"],
     ukuran: UK_SEPATU,
-    gambar: img("sepatu", 10, 1),
+    gambar: [
+      "/images/sepatu/sandal-slide-sport-1.jpeg",
+      "/images/sepatu/sandal-slide-sport-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/sepatu/sandal-slide-sport-1.jpeg",
+      "/images/sepatu/sandal-slide-sport-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/sepatu/sandal-slide-sport-1.jpeg",
+      Navy: "/images/sepatu/sandal-slide-sport-2.jpeg",
+    },
   },
 
   // ================= AKSESORIS =================

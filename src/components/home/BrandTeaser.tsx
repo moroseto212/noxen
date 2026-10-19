@@ -13,7 +13,7 @@ const nilai = [
   },
   {
     judul: "Mudah dibeli",
-    isi: "Belanja lewat Shopee, Tokopedia, TikTok Shop, Lazada, atau Instagram.",
+    isi: "Belanja lewat Shopee, Tokopedia, TikTok Shop, atau Lazada.",
   },
 ];
 

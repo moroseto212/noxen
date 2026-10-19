@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { BottomNav } from "@/components/layout/BottomNav";
 import { site } from "@/lib/seo";
 
 const geistSans = Geist({
@@ -47,12 +48,18 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  appleWebApp: {
+    capable: true,
+    title: site.nama,
+    statusBarStyle: "default",
+  },
 };
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -64,8 +71,9 @@ export default function RootLayout({
     <html lang="id" className={geistSans.variable}>
       <body className="flex min-h-dvh flex-col antialiased">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 max-md:pb-20">{children}</main>
         <Footer />
+        <BottomNav />
       </body>
     </html>
   );

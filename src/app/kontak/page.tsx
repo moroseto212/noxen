@@ -8,13 +8,13 @@ import { waLink } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Toko & Bantuan",
   description:
-    "Beli produk Noxen lewat Shopee, Tokopedia, TikTok Shop, Lazada, atau Instagram. Hubungi tim support kami untuk bantuan.",
+    "Beli produk Noxen lewat Shopee, Tokopedia, TikTok Shop, atau Lazada. Hubungi tim support kami untuk bantuan.",
 };
 
 const faq = [
   {
     t: "Di mana saya bisa membeli produk Noxen?",
-    j: "Semua produk dapat dibeli melalui marketplace resmi kami: Shopee, Tokopedia, TikTok Shop, Lazada, dan Instagram. Pilih yang paling nyaman untukmu.",
+    j: "Semua produk dapat dibeli melalui marketplace resmi kami: Shopee, Tokopedia, TikTok Shop, dan Lazada. Pilih yang paling nyaman untukmu.",
   },
   {
     t: "Apakah semua produk asli?",
@@ -78,9 +78,9 @@ export default function KontakPage() {
           <h2 className="text-xl font-semibold tracking-tight text-ink">
             Marketplace resmi
           </h2>
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {toko.map((t, i) => (
-              <Reveal key={t.nama} delay={(i % 3) * 0.06}>
+              <Reveal key={t.nama} delay={(i % 4) * 0.06}>
                 <div className="flex h-full flex-col justify-between rounded-3xl border border-line/60 bg-white p-6">
                   <div>
                     <h3 className="text-lg font-semibold text-ink">

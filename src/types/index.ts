@@ -22,6 +22,7 @@ export interface Kategori {
   nama: string;
   deskripsi: string;
   gambar: string;
+  gambarContain?: boolean;
 }
 
 export interface Toko {

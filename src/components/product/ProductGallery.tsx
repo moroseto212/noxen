@@ -30,12 +30,15 @@ export function ProductGallery({
   };
   const [rasio, setRasio] = useState<Record<number, number>>({});
   const isContain = containSet.has(images[aktif]);
-  const rasioAktif = rasio[aktif];
+  const rasioAktif = rasio[aktif] ?? (isContain ? Object.values(rasio)[0] : undefined);
 
   return (
     <div className="flex flex-col gap-4">
       <div
-        className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-surface transition-[aspect-ratio] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+        className={cn(
+          "relative aspect-[4/5] overflow-hidden rounded-3xl transition-[aspect-ratio] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+          isContain ? "bg-white" : "bg-surface",
+        )}
         style={isContain && rasioAktif ? { aspectRatio: rasioAktif } : undefined}
       >
         <AnimatePresence mode="wait">
@@ -78,7 +81,8 @@ export function ProductGallery({
               aria-label={`Lihat gambar ${i + 1}`}
               aria-current={i === aktif}
               className={cn(
-                "relative aspect-square overflow-hidden rounded-2xl bg-surface ring-1 transition-all",
+                "relative aspect-square overflow-hidden rounded-2xl ring-1 transition-all",
+                containSet.has(src) ? "bg-white" : "bg-surface",
                 i === aktif ? "ring-2 ring-ink" : "ring-line hover:ring-ink-soft",
               )}
             >

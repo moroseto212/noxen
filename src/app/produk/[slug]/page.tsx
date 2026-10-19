@@ -150,7 +150,10 @@ async function DetailProduk({
             <div className="mt-8 grid grid-cols-2 gap-x-5 gap-y-10 lg:grid-cols-4">
               {terkait.map((p, i) => (
                 <Reveal key={p.id} delay={i * 0.06}>
-                  <ProductCard produk={p} />
+                  <ProductCard
+                    produk={p}
+                    rasio={item.kategori === "sepatu" ? "1/1" : "4/5"}
+                  />
                 </Reveal>
               ))}
             </div>
