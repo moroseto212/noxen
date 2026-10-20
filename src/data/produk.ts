@@ -5,10 +5,6 @@ const UK_CELANA = ["28", "30", "32", "34", "36"];
 const UK_SEPATU = ["39", "40", "41", "42", "43", "44"];
 const UK_ONE = ["One Size"];
 
-function img(kat: KategoriSlug, ...nums: number[]): string[] {
-  return nums.map((n) => `/images/${kat}/${String(n).padStart(2, "0")}.jpg`);
-}
-
 export const produk: Produk[] = [
   // ================= BAJU =================
   {
@@ -754,7 +750,19 @@ export const produk: Produk[] = [
     bahan: "Frame acetate, lensa polarized",
     warna: ["Hitam", "Coklat Tortoise"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 1, 2),
+    gambar: [
+      "/images/aksesoris/kacamata-sunglasses-polarized-1.jpeg",
+      "/images/aksesoris/kacamata-sunglasses-polarized-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/kacamata-sunglasses-polarized-1.jpeg",
+      "/images/aksesoris/kacamata-sunglasses-polarized-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/aksesoris/kacamata-sunglasses-polarized-1.jpeg",
+      "Coklat Tortoise": "/images/aksesoris/kacamata-sunglasses-polarized-2.jpeg",
+    },
     unggulan: true,
   },
   {
@@ -768,7 +776,22 @@ export const produk: Produk[] = [
     bahan: "Katun twill",
     warna: ["Hitam", "Navy", "Krem"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 2, 3),
+    gambar: [
+      "/images/aksesoris/topi-baseball-cap-1.jpeg",
+      "/images/aksesoris/topi-baseball-cap-2.jpeg",
+      "/images/aksesoris/topi-baseball-cap-3.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/topi-baseball-cap-1.jpeg",
+      "/images/aksesoris/topi-baseball-cap-2.jpeg",
+      "/images/aksesoris/topi-baseball-cap-3.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/aksesoris/topi-baseball-cap-1.jpeg",
+      Navy: "/images/aksesoris/topi-baseball-cap-2.jpeg",
+      Krem: "/images/aksesoris/topi-baseball-cap-3.jpeg",
+    },
   },
   {
     id: "aks-03",
@@ -781,7 +804,22 @@ export const produk: Produk[] = [
     bahan: "Stainless steel",
     warna: ["Silver", "Gold", "Hitam"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 3, 4),
+    gambar: [
+      "/images/aksesoris/jam-tangan-minimalis-1.jpeg",
+      "/images/aksesoris/jam-tangan-minimalis-2.jpeg",
+      "/images/aksesoris/jam-tangan-minimalis-3.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/jam-tangan-minimalis-1.jpeg",
+      "/images/aksesoris/jam-tangan-minimalis-2.jpeg",
+      "/images/aksesoris/jam-tangan-minimalis-3.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Silver: "/images/aksesoris/jam-tangan-minimalis-1.jpeg",
+      Gold: "/images/aksesoris/jam-tangan-minimalis-2.jpeg",
+      Hitam: "/images/aksesoris/jam-tangan-minimalis-3.jpeg",
+    },
   },
   {
     id: "aks-04",
@@ -794,7 +832,19 @@ export const produk: Produk[] = [
     bahan: "Kanvas katun tebal",
     warna: ["Krem", "Hitam"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 4, 5),
+    gambar: [
+      "/images/aksesoris/tas-tote-kanvas-1.jpeg",
+      "/images/aksesoris/tas-tote-kanvas-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/tas-tote-kanvas-1.jpeg",
+      "/images/aksesoris/tas-tote-kanvas-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Krem: "/images/aksesoris/tas-tote-kanvas-1.jpeg",
+      Hitam: "/images/aksesoris/tas-tote-kanvas-2.jpeg",
+    },
   },
   {
     id: "aks-05",
@@ -807,7 +857,19 @@ export const produk: Produk[] = [
     bahan: "Kulit asli",
     warna: ["Hitam", "Coklat"],
     ukuran: ["S", "M", "L", "XL"],
-    gambar: img("aksesoris", 5, 6),
+    gambar: [
+      "/images/aksesoris/ikat-pinggang-kulit-1.jpeg",
+      "/images/aksesoris/ikat-pinggang-kulit-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/ikat-pinggang-kulit-1.jpeg",
+      "/images/aksesoris/ikat-pinggang-kulit-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/aksesoris/ikat-pinggang-kulit-1.jpeg",
+      Coklat: "/images/aksesoris/ikat-pinggang-kulit-2.jpeg",
+    },
   },
   {
     id: "aks-06",
@@ -820,7 +882,19 @@ export const produk: Produk[] = [
     bahan: "Kulit asli",
     warna: ["Hitam", "Coklat Tua"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 6, 7),
+    gambar: [
+      "/images/aksesoris/dompet-kulit-slim-1.jpeg",
+      "/images/aksesoris/dompet-kulit-slim-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/dompet-kulit-slim-1.jpeg",
+      "/images/aksesoris/dompet-kulit-slim-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/aksesoris/dompet-kulit-slim-1.jpeg",
+      "Coklat Tua": "/images/aksesoris/dompet-kulit-slim-2.jpeg",
+    },
   },
   {
     id: "aks-07",
@@ -833,7 +907,19 @@ export const produk: Produk[] = [
     bahan: "Titanium",
     warna: ["Silver", "Hitam"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 7, 8),
+    gambar: [
+      "/images/aksesoris/kalung-titanium-1.jpeg",
+      "/images/aksesoris/kalung-titanium-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/kalung-titanium-1.jpeg",
+      "/images/aksesoris/kalung-titanium-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Silver: "/images/aksesoris/kalung-titanium-1.jpeg",
+      Hitam: "/images/aksesoris/kalung-titanium-2.jpeg",
+    },
   },
   {
     id: "aks-08",
@@ -846,7 +932,22 @@ export const produk: Produk[] = [
     bahan: "Rajut akrilik",
     warna: ["Hitam", "Abu", "Maroon"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 8, 9),
+    gambar: [
+      "/images/aksesoris/beanie-rajut-1.jpeg",
+      "/images/aksesoris/beanie-rajut-2.jpeg",
+      "/images/aksesoris/beanie-rajut-3.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/beanie-rajut-1.jpeg",
+      "/images/aksesoris/beanie-rajut-2.jpeg",
+      "/images/aksesoris/beanie-rajut-3.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/aksesoris/beanie-rajut-1.jpeg",
+      Abu: "/images/aksesoris/beanie-rajut-2.jpeg",
+      Maroon: "/images/aksesoris/beanie-rajut-3.jpeg",
+    },
   },
   {
     id: "aks-09",
@@ -859,7 +960,19 @@ export const produk: Produk[] = [
     bahan: "Polyester water-resistant",
     warna: ["Hitam", "Abu"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 9, 10),
+    gambar: [
+      "/images/aksesoris/ransel-daypack-1.jpeg",
+      "/images/aksesoris/ransel-daypack-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/ransel-daypack-1.jpeg",
+      "/images/aksesoris/ransel-daypack-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Hitam: "/images/aksesoris/ransel-daypack-1.jpeg",
+      Abu: "/images/aksesoris/ransel-daypack-2.jpeg",
+    },
     unggulan: true,
   },
   {
@@ -873,7 +986,19 @@ export const produk: Produk[] = [
     bahan: "Kulit anyam",
     warna: ["Coklat", "Hitam"],
     ukuran: UK_ONE,
-    gambar: img("aksesoris", 10, 1),
+    gambar: [
+      "/images/aksesoris/gelang-kulit-braided-1.jpeg",
+      "/images/aksesoris/gelang-kulit-braided-2.jpeg",
+    ],
+    gambarContain: [
+      "/images/aksesoris/gelang-kulit-braided-1.jpeg",
+      "/images/aksesoris/gelang-kulit-braided-2.jpeg",
+    ],
+    kartuContain: true,
+    warnaGambar: {
+      Coklat: "/images/aksesoris/gelang-kulit-braided-1.jpeg",
+      Hitam: "/images/aksesoris/gelang-kulit-braided-2.jpeg",
+    },
   },
 ];
 

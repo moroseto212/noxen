@@ -24,7 +24,8 @@ export const kategori: Kategori[] = [
     slug: "aksesoris",
     nama: "Aksesoris",
     deskripsi: "Kacamata, topi, jam, tas, dan pelengkap penampilan.",
-    gambar: "/images/aksesoris/01.jpg",
+    gambar: "/images/aksesoris/kacamata-sunglasses-polarized-1.jpeg",
+    gambarContain: true,
   },
 ];
 
