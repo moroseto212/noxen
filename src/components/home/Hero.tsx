@@ -71,14 +71,14 @@ export function Hero() {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="relative"
         >
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-2xl shadow-black/10">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-white shadow-2xl shadow-black/10">
             <Image
-              src="/images/sepatu/02.jpg"
+              src="/images/sepatu/sneakers-low-classic-1.png"
               alt="Koleksi sepatu Noxen"
               fill
               priority
               sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
           <div className="absolute -bottom-5 -left-5 hidden rounded-2xl bg-white p-4 shadow-xl shadow-black/5 sm:block">

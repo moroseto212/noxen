@@ -67,13 +67,13 @@ export default function TentangPage() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-surface">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-white">
               <Image
-                src="/images/baju/04.jpg"
+                src="/images/baju/kemeja-flanel-lengan-panjang-1.png"
                 alt="Koleksi Noxen"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>

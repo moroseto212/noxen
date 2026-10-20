@@ -5,7 +5,8 @@ export const kategori: Kategori[] = [
     slug: "baju",
     nama: "Baju",
     deskripsi: "Kaos, kemeja, hoodie, hingga jaket dengan bahan pilihan.",
-    gambar: "/images/baju/01.jpg",
+    gambar: "/images/baju/kaos-oversize-katun-combed-1.jpeg",
+    gambarContain: true,
   },
   {
     slug: "celana",

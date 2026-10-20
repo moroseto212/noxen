@@ -20,7 +20,7 @@ export function ProductGallery({
   aktif: aktifProp,
   onAktifChange,
 }: ProductGalleryProps) {
-  const images = gambar.length > 0 ? gambar : ["/images/baju/01.jpg"];
+  const images = gambar.length > 0 ? gambar : ["/images/baju/kaos-oversize-katun-combed-1.jpeg"];
   const containSet = new Set(contain ?? []);
   const [aktifInternal, setAktifInternal] = useState(0);
   const aktif = aktifProp ?? aktifInternal;
